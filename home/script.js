@@ -1,7 +1,7 @@
 /*--------------------
 Vars
 --------------------*/
-let progress = 10
+let progress = 30
 let startX = 0
 let active = 0
 let isDown = false

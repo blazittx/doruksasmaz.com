@@ -2,7 +2,7 @@ body {
   overflow: hidden;
   font-family: 'Bungee';
   height: 100vh;
-  background: linear-gradient(135deg, #cff2c9, #f6ffce);
+  background: linear-gradient(135deg, #222222,50%, #242424);
   cursor: auto !important;
 
   -webkit-touch-callout: none;
@@ -32,7 +32,7 @@ body {
 .num {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-shadow: 0px -6px 0 #212121,
+  /*text-shadow: 0px -6px 0 #212121,
     0px -6px 0 #212121,
     0px 6px 0 #212121,
     0px 6px 0 #212121,
@@ -53,7 +53,7 @@ body {
     0 12px 6px rgba(0, 0, 0, .2),
     0 18px 18px rgba(0, 0, 0, .25),
     0 24px 24px rgba(0, 0, 0, .2),
-    0 36px 36px rgba(0, 0, 0, .15) !important;
+    0 36px 36px rgba(0, 0, 0, .15) !important;*/
 }
 
 .click-me{
@@ -66,7 +66,7 @@ body {
 
   color: #fff;
 
-  text-shadow: 0px -3px 0 #212121,
+  /*text-shadow: 0px -3px 0 #212121,
     0px -3px 0 #212121,
     0px 3px 0 #212121,
     0px 3px 0 #212121,
@@ -80,14 +80,14 @@ body {
     3px 3px 0 #212121,
     -3px 6px 0 #212121,
     0px 6px 0 #212121,
-    3px 6px 0 #212121 !important;
+    3px 6px 0 #212121 !important;*/
 }
 
 .name {
   right: 130px !important;
   font-size: clamp(20px, 10vw, 120px);
   text-align: right;
-  color: #f6ffce;
+  color: #FFCD84;
   position: absolute;
   right: 0;
   padding-top: 80px !important;
@@ -96,10 +96,10 @@ body {
 
 .description {
   font-size: 20px;
-  color: #212121;
+  color: #bebebe;
   position: relative;
   text-align: right;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
   text-shadow: none !important;
 }
 
@@ -121,7 +121,7 @@ body {
   --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
   overflow: hidden;
   position: absolute;
-  z-index: var(--zIndex);
+  z-index: var(--zIndex); 
   width: var(--width);
   height: var(--height);
   margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
@@ -134,21 +134,21 @@ body {
   user-select: none;
   transform-origin: 0% 100%;
   box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.2);
-  background: #f6ffce;
+  background: #ffffff00;
   pointer-events: all;
   transform: translate(var(--x), var(--y)) rotate(var(--rot));
   transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1);
-  box-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121, 0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121, -6px 6px 0 #212121, 6px 6px 0 #212121, -6px 18px 0 #212121, 0px 18px 0 #212121, 6px 18px 0 #212121, 0 19px 1px rgb(0 0 0 / 10%), 0 0 6px rgb(0 0 0 / 10%), 0 6px 3px rgb(0 0 0 / 30%), 0 12px 6px rgb(0 0 0 / 20%), 0 18px 18px rgb(0 0 0 / 25%), 0 24px 24px rgb(0 0 0 / 20%), 0 36px 36px rgb(0 0 0 / 15%);
-  opacity: var(--opacity);
+  /*box-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121, 0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121, -6px 6px 0 #212121, 6px 6px 0 #212121, -6px 18px 0 #212121, 0px 18px 0 #212121, 6px 18px 0 #212121, 0 19px 1px rgb(0 0 0 / 10%), 0 0 6px rgb(0 0 0 / 10%), 0 6px 3px rgb(0 0 0 / 30%), 0 12px 6px rgb(0 0 0 / 20%), 0 18px 18px rgb(0 0 0 / 25%), 0 24px 24px rgb(0 0 0 / 20%), 0 36px 36px rgb(0 0 0 / 15%);
+  */opacity: var(--opacity);
 }
 
 .description-box {
   position: absolute;
   z-index: 3;
-  color: #fff;
+  color: #222222;
   bottom: 30px;
   left: 130px;
-  background: #212121;
+  background: #FFCD84;
   padding: 10px 20px 10px 20px;
   max-height: 20vw;
   max-width: 40vw !important;
@@ -229,7 +229,7 @@ body {
   left: 90px;
   width: 10px;
   height: 100%;
-  border: 2px solid #212121;
+  border: 2px solid #FFCD84;
   border-top: none;
   border-bottom: none;
   opacity: 0.15;
@@ -239,7 +239,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 30px;
-  color: #212121;
+  color: #FFCD84;
   transform-origin: 0% 10%;
   transform: rotate(-90deg);
   font-family: 'Bungee';
@@ -330,12 +330,12 @@ body {
     user-select: none;
     transform-origin: 0% 100%;
     box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.2);
-    background: #f6ffce;
+    background: #ffffff00;
     pointer-events: all;
     transform: translate(var(--x), var(--y)) rotate(var(--rot));
     transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1);
-    box-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121, 0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121, -6px 6px 0 #212121, 6px 6px 0 #212121, -6px 18px 0 #212121, 0px 18px 0 #212121, 6px 18px 0 #212121, 0 19px 1px rgb(0 0 0 / 10%), 0 0 6px rgb(0 0 0 / 10%), 0 6px 3px rgb(0 0 0 / 30%), 0 12px 6px rgb(0 0 0 / 20%), 0 18px 18px rgb(0 0 0 / 25%), 0 24px 24px rgb(0 0 0 / 20%), 0 36px 36px rgb(0 0 0 / 15%) !important;
-    opacity: var(--opacity);
+    /*box-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121, 0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121, -6px 6px 0 #212121, 6px 6px 0 #212121, -6px 18px 0 #212121, 0px 18px 0 #212121, 6px 18px 0 #212121, 0 19px 1px rgb(0 0 0 / 10%), 0 0 6px rgb(0 0 0 / 10%), 0 6px 3px rgb(0 0 0 / 30%), 0 12px 6px rgb(0 0 0 / 20%), 0 18px 18px rgb(0 0 0 / 25%), 0 24px 24px rgb(0 0 0 / 20%), 0 36px 36px rgb(0 0 0 / 15%) !important;
+    */opacity: var(--opacity);
   }
 
 }
@@ -442,7 +442,7 @@ body {
     user-select: none;
     transform-origin: 0% 100%;
     box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.2);
-    background: #f6ffce;
+    background: #ffffff00;
     pointer-events: all;
     transform: translate(var(--x), var(--y)) rotate(var(--rot));
     transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1);
