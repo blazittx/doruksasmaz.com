@@ -192,7 +192,7 @@ text-shadow: 0px -3px 0 #212121,
   font-size: clamp(40px, 5vw, 80px);
 }
 
-.carousel-item img, video {
+.carousel-item video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
