@@ -67,13 +67,14 @@
 					<div class="title">Enhancer Gaming Hackathon</div>
 				</a>
 				<div class="num">03</div>
-				<video autoplay loop muted playsinline>
+				<video id="myVideo" loop muted playsinline>
 					<source src="content/Internal.webm" type="video/webm">
 				</video>
 			</div>
 		</div>
 
-		<div class="carousel-item" data-description="Unforgettable VR experience of being an Ape who has guns! - BUG Spring Jam 2023">
+		<div class="carousel-item"
+			data-description="Unforgettable VR experience of being an Ape who has guns! - BUG Spring Jam 2023">
 			<div class="click-me">Click Me!</div>
 			<div class="carousel-box">
 				<a href="ApeAscent.html" class="link">
@@ -85,9 +86,10 @@
 				</video>
 			</div>
 		</div>
-		
 
-		<div class="carousel-item" data-description="Fight off the endless waves of demons in this procedurally generated hotel! - BUG Fall Jam 2022">
+
+		<div class="carousel-item"
+			data-description="Fight off the endless waves of demons in this procedurally generated hotel! - BUG Fall Jam 2022">
 			<div class="click-me">Click Me!</div>
 			<div class="carousel-box">
 				<a href="HotHell.html" class="link">
@@ -158,7 +160,12 @@
 
 	</div>
 	<!-- partial -->
-	<script src="home/script.js"></script>
+	<script src="home/script.js">
+		document.addEventListener('DOMContentLoaded', function () {
+			var myVideo = document.getElementById('myVideo');
+			myVideo.play();
+		});
+	</script>
 
 </body>
 
