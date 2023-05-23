@@ -389,8 +389,8 @@ text-shadow: 0px -3px 0 #212121,
 
   .carousel-item {
   --items: 7;
-    --width: clamp(200px, 30vw, 350px);
-    --height: clamp(280px, 40vw, 480px);
+    --width: clamp(260px, 30vw, 350px);
+    --height: clamp(360px, 40vw, 480px);
     --x: calc(var(--active) * 400%);
     --y: calc(var(--active) * 100%);
     --rot: calc(var(--active) * 120deg);
