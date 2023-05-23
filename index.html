@@ -25,7 +25,7 @@
 	<div class="header">
 		<img class="image-logo" src="content\logo.webp" alt="">
 		<div class="name">BLAZITT
-			<div class="description">Interactive portfolio v1.8</div>
+			<div class="description">Interactive portfolio v1.9</div>
 			<!-- i *try* to design cool games. -->
 		</div>
 	</div>
@@ -67,38 +67,40 @@
 					<div class="title">Enhancer Gaming Hackathon</div>
 				</a>
 				<div class="num">03</div>
-				<video id="myVideo" loop muted playsinline>
+				<video class="desktop-video" autoplay loop muted playsinline>
 					<source src="content/Internal.webm" type="video/webm">
 				</video>
+				<img class="mobile-image" src="content/Internal.png" alt="Enhancer Gaming Hackathon">
 			</div>
 		</div>
+		
 
-		<div class="carousel-item"
-			data-description="Unforgettable VR experience of being an Ape who has guns! - BUG Spring Jam 2023">
+		<div class="carousel-item" data-description="Unforgettable VR experience of being an Ape who has guns! - BUG Spring Jam 2023">
 			<div class="click-me">Click Me!</div>
 			<div class="carousel-box">
 				<a href="ApeAscent.html" class="link">
 					<div class="title">Ape Ascent</div>
 				</a>
 				<div class="num">04</div>
-				<video autoplay loop muted playsinline>
+				<video class="desktop-video" autoplay loop muted playsinline>
 					<source src="content/ApeAscent.webm" type="video/webm">
 				</video>
+				<img class="mobile-image" src="content/ApeAscent.png" alt="Enhancer Gaming Hackathon">
 			</div>
 		</div>
+		
 
-
-		<div class="carousel-item"
-			data-description="Fight off the endless waves of demons in this procedurally generated hotel! - BUG Fall Jam 2022">
+		<div class="carousel-item" data-description="Fight off the endless waves of demons in this procedurally generated hotel! - BUG Fall Jam 2022">
 			<div class="click-me">Click Me!</div>
 			<div class="carousel-box">
 				<a href="HotHell.html" class="link">
 					<div class="title">Hot Hell</div>
 				</a>
 				<div class="num">05</div>
-				<video autoplay loop muted playsinline>
+				<video class="desktop-video" autoplay loop muted playsinline>
 					<source src="content/HotHell.webm" type="video/webm">
 				</video>
+				<img class="mobile-image" src="content/HotHell.png" alt="Enhancer Gaming Hackathon">
 			</div>
 		</div>
 
@@ -109,9 +111,10 @@
 					<div class="title">Diabolical Studios</div>
 				</a>
 				<div class="num">06</div>
-				<video autoplay loop muted playsinline>
+				<video class="desktop-video" autoplay loop muted playsinline>
 					<source src="content/Diabolical.webm" type="video/webm">
 				</video>
+				<img class="mobile-image" src="content/Diabolical.png" alt="Enhancer Gaming Hackathon">
 			</div>
 		</div>
 
@@ -160,12 +163,7 @@
 
 	</div>
 	<!-- partial -->
-	<script src="home/script.js">
-		document.addEventListener('DOMContentLoaded', function () {
-			var myVideo = document.getElementById('myVideo');
-			myVideo.play();
-		});
-	</script>
+	<script src="home/script.js"></script>
 
 </body>
 
