@@ -1,10 +1,9 @@
-
 body {
   overflow: hidden !important;
-  font-family: 'Bungee';
-  background: linear-gradient(135deg, #cff2c9, #f6ffce);
+  font-family: 'GrandHaven';
+  background: #161616;
   background-size: cover !important;
-  
+
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -14,13 +13,20 @@ body {
   user-select: none;
 }
 
+@font-face {
+  font-family: 'GrandHaven';
+  src: url(fonts/GrandHaven_ttf.ttf) format("truetype");
+}
+
 a {
-  color: #F6ffce;
+  color: #FFCD84;
   text-decoration: underline;
 }
 
-a:visited {
-  color: #F6ffce;
+b {
+  font-family: 'Bungee';
+  font-size: large;
+  font-weight: 100;
 }
 
 .link {
@@ -35,41 +41,20 @@ a:visited {
 .header>.name {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-shadow: 0px -6px 0 #212121,
-    0px -6px 0 #212121,
-    0px 6px 0 #212121,
-    0px 6px 0 #212121,
-    -6px 0px 0 #212121,
-    6px 0px 0 #212121,
-    -6px 0px 0 #212121,
-    6px 0px 0 #212121,
-    -6px -6px 0 #212121,
-    6px -6px 0 #212121,
-    -6px 6px 0 #212121,
-    6px 6px 0 #212121,
-    -6px 18px 0 #212121,
-    0px 18px 0 #212121,
-    6px 18px 0 #212121,
-    0 19px 1px rgba(0, 0, 0, .1),
-    0 0 6px rgba(0, 0, 0, .1),
-    0 6px 3px rgba(0, 0, 0, .3),
-    0 12px 6px rgba(0, 0, 0, .2),
-    0 18px 18px rgba(0, 0, 0, .25),
-    0 24px 24px rgba(0, 0, 0, .2),
-    0 36px 36px rgba(0, 0, 0, .15) !important;
 }
 
 .description-box {
   position: relative !important;
   z-index: 3;
+  line-height: 180%;
   color: #fff;
   margin: auto;
   margin-bottom: 130px;
-  background: #212121;
+  background: #222222;
   width: clamp(900px, 65vw, 1800px);
   /* Use viewport width units for better responsiveness */
   text-align: left;
-  padding: 20px 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
   margin-top: 20px;
   border-radius: 5px;
   font-family: 'Montserrat';
@@ -116,7 +101,7 @@ a:visited {
 .name {
   text-align: center;
   font-size: 120px;
-  color: #F6ffce;
+  color: #FFCD84;
   margin: auto;
   position: relative;
   padding-top: 28px !important;
@@ -124,9 +109,10 @@ a:visited {
 }
 
 .description {
+  font-family: 'Bungee';
   text-align: center;
   font-size: 20px;
-  color: #212121;
+  color: #ffffff;
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -149,7 +135,7 @@ a:visited {
   left: 90px;
   width: 10px;
   height: 100%;
-  border: 2px solid #212121;
+  border: 2px solid #FFCD84;
   border-top: none;
   border-bottom: none;
   opacity: 0.15;
@@ -159,10 +145,10 @@ a:visited {
   position: absolute;
   bottom: 0;
   left: 30px;
-  color: #212121;
+  color: #FFCD84;
   transform-origin: 0% 10%;
   transform: rotate(-90deg);
-  font-family: 'Bungee';
+  font-family: 'GrandHaven';
   font-size: 9px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -244,7 +230,8 @@ a:visited {
 }
 
 h4 {
-  font-family: 'Bungee';
+  font-family: 'GrandHaven';
+  color: #FFCD84;
   font-size: 24px;
 }
 
@@ -258,12 +245,12 @@ h4 {
   .image {
     height: 30vh;
   }
-  
+
 
   .name {
     text-align: center;
     font-size: 10vw;
-    color: #F6ffce;
+    color: #FFCD84;
     margin: auto;
     position: relative;
     padding-top: 28px !important;
@@ -273,7 +260,7 @@ h4 {
   .description {
     margin: auto;
     font-size: 4vw;
-    color: #212121;
+    color: #fff;
     position: relative;
     text-align: center;
     padding-top: 8px;
@@ -285,21 +272,6 @@ h4 {
   .num {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-shadow: 0px -3px 0 #212121,
-      0px -3px 0 #212121,
-      0px 3px 0 #212121,
-      0px 3px 0 #212121,
-      -3px 0px 0 #212121,
-      3px 0px 0 #212121,
-      -3px 0px 0 #212121,
-      3px 0px 0 #212121,
-      -3px -3px 0 #212121,
-      3px -3px 0 #212121,
-      -3px 3px 0 #212121,
-      3px 3px 0 #212121,
-      -3px 9px 0 #212121,
-      0px 9px 0 #212121,
-      3px 9px 0 #212121 !important;
   }
 
   .description-box {
@@ -313,7 +285,7 @@ h4 {
     width: clamp(300px, 85vw, 1200px);
     /* Use viewport width units for better responsiveness */
     text-align: left;
-    padding: 20px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
     border-radius: 5px;
     font-family: 'Montserrat';
     font-size: clamp(14px, 1vw, 18px);
@@ -357,7 +329,7 @@ h4 {
     opacity: 0.15;
   }
 
-  .social-media-icons{
+  .social-media-icons {
     display: none !important;
   }
 }
