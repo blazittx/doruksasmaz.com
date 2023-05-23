@@ -11,6 +11,35 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 80px;
+  margin-left: -40px;
+  margin-top: -40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #FFCD84;
+  transition-property: transform, scale, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  scale: 0.3;
+  z-index: 10000;
+}
+
+.custom-cursor--link {
+  scale: 1;
+}
+.custom-cursor--init {
+  opacity: 1;
 }
 
 @font-face {
@@ -21,6 +50,7 @@ body {
 a {
   color: #FFCD84;
   text-decoration: underline;
+  cursor: none !important;
 }
 
 b {
@@ -36,6 +66,7 @@ b {
   top: 0;
   left: 0;
   z-index: 9;
+  cursor: none !important;
 }
 
 .header>.name {
@@ -174,28 +205,6 @@ b {
   font-size: 20px;
   overflow: hidden;
   padding-bottom: 0.1em;
-}
-
-.cursor {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  --size: 40px;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  border: 3px solid #212121;
-  margin: calc(var(--size) * -0.5) 0 0 calc(var(--size) * -0.5);
-  transition: transform 0.85s cubic-bezier(0, 0.02, 0, 1);
-  display: none;
-  pointer-events: none !important;
-}
-
-
-.cursor2 {
-  --size: 2px;
-  transition-duration: 0.7s;
 }
 
 .social-media-icons {

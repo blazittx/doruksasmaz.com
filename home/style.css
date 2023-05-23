@@ -3,7 +3,7 @@ body {
   font-family: 'GrandHaven';
   height: 100vh;
   background: linear-gradient(135deg, #222222, 10%, #161616);
-  cursor: auto !important;
+  cursor: none !important;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -20,6 +20,7 @@ body {
   top: 0;
   left: 0;
   z-index: 9;
+  cursor: none !important;
 }
 
 .link.disabled {
@@ -278,21 +279,48 @@ video {
   height: 70px;
 }
 
-.cursor {
+
+
+
+
+
+
+
+
+.custom-cursor {
   position: fixed;
-  z-index: 10;
+  opacity: 0;
   top: 0;
   left: 0;
-  --size: 40px;
-  width: var(--size);
-  height: var(--size);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 80px;
+  margin-left: -40px;
+  margin-top: -40px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  border: 3px solid #212121;
-  margin: calc(var(--size) * -0.5) 0 0 calc(var(--size) * -0.5);
-  transition: transform 0.85s cubic-bezier(0, 0.02, 0, 1);
-  display: none;
-  pointer-events: none !important;
+  background-color: #FFCD84;
+  transition-property: transform, scale, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  scale: 0.3;
+  z-index: 10000;
 }
+
+.custom-cursor--link {
+  scale: 1;
+}
+.custom-cursor--init {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
 
 .mobile-image {
   display: none; /* Hide the image by default */
