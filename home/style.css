@@ -80,11 +80,6 @@ body {
   padding-top: 80px !important;
   z-index: 4;
 }
-a {
-  color: #FFCD84 !important;
-  text-decoration: none !important;
-  cursor: none !important;
-}
 
 .description {
   font-size: 20px;
