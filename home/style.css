@@ -359,6 +359,7 @@ text-shadow: 0px -3px 0 #212121,
     position: absolute;
     margin-left: auto;
     padding-top: 28px !important;
+    text-shadow: 0 0 10px#161616;
     z-index: 4;
   }
 
