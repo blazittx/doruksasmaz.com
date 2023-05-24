@@ -450,7 +450,7 @@ video {
     --x: calc(var(--active) * 400%);
     --y: calc(var(--active) * 100%);
     --rot: calc(var(--active) * 120deg);
-    --opacity: calc(var(--zIndex) / var(--items) * 3.2 - 2);
+    --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
     overflow: hidden;
     position: absolute;
     z-index: var(--zIndex);
@@ -458,7 +458,7 @@ video {
     height: var(--height);
     margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
     border-radius: 10px;
-    top: 50vh;
+    top: 45%;
     left: 50%;
     -webkit-user-select: none;
     -moz-user-select: none;
