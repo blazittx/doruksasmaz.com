@@ -19,7 +19,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 100;
   cursor: none !important;
 }
 
@@ -414,7 +414,7 @@ video {
     position: absolute;
     margin-left: auto;
     padding-top: 28px !important;
-    text-shadow: 0 0 10px#161616;
+    text-shadow: 1px 1px 10px#161616;
     z-index: 4;
   }
 
@@ -423,7 +423,7 @@ video {
     position: relative;
     text-align: left;
     padding-top: 8px;
-    text-shadow: none !important;
+    text-shadow: 1px 1px 10px#161616;
   }
 
   .carousel-item .num {
@@ -540,6 +540,8 @@ video {
   gap: 10px;
   z-index: 100;
   /* Ensure the icons appear above other elements */
+
+  text-shadow: 1px 1px 10px#161616;
 }
 
 .social-media-icons a {
