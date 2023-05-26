@@ -83,10 +83,10 @@ body {
 
 .description {
   font-size: 20px;
-  color: #ffffff;
+  color: #4f4f4f;
   position: relative;
   text-align: right;
-  font-family: 'Bungee';
+  font-family: 'Consolas';
   /*padding-top: 10px;*/
   text-shadow: none !important;
 }
