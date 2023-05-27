@@ -415,6 +415,14 @@ h4 {
   .name {
     width: 90%;
   }
+
+  .custom-cursor {
+    display: none !important;
+  }
+
+  body{
+    cursor: auto !important;
+  }
 }
 
 .social-media-icons {

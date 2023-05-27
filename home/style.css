@@ -356,6 +356,10 @@ video {
     display: none !important;
   }
 
+  .body{
+    cursor: auto !important;
+  }
+
   .header > .name,
   .title,
   .num {
