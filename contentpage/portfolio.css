@@ -36,15 +36,10 @@ body {
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
   text-shadow: none !important;
 
-  max-width: 100%;
-  /* Ensures the box doesn't exceed the container's width */
-  max-height: 65vh;
-
   margin-top: 40px;
-    border: 4px solid #FFCD84;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 40px;
+  border: 4px solid #FFCD84;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 
