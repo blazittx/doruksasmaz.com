@@ -83,6 +83,7 @@ b {
   margin-bottom: 130px;
   background: #222222;
   width: clamp(900px, 65vw, 1800px);
+  height: clamp(300px, 50vw, 900px);
   /* Use viewport width units for better responsiveness */
   text-align: left;
   padding: 0px 20px 20px 20px;
@@ -280,33 +281,6 @@ h4 {
   .num {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  .description-box {
-    position: relative !important;
-    align-items: center;
-    z-index: 3;
-    color: #fff;
-    margin: auto;
-    margin-bottom: 30px;
-    background: #212121;
-    width: clamp(300px, 85vw, 1200px);
-    /* Use viewport width units for better responsiveness */
-    text-align: left;
-    padding: 0px 20px 20px 20px;
-    border-radius: 5px;
-    font-family: 'Montserrat';
-    font-size: clamp(14px, 1vw, 18px);
-    box-sizing: border-box;
-    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-    text-shadow: none !important;
-
-    max-width: 100%;
-    /* Ensures the box doesn't exceed the container's width */
-    max-height: 65vh;
-    /* Use viewport height units for better responsiveness */
-    overflow: auto;
-    /* Makes the box scrollable when content overflows */
   }
 
   .layout {
