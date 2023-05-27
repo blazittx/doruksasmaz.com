@@ -88,8 +88,8 @@ body {
 
 .carousel-item {
   --items: 7;
-  --width: clamp(240px, 20vw, 340px);
-  --height: clamp(338.8px, 30vw, 480px);
+  --width: clamp(240px, 20vw, 380px);
+  --height: clamp(338.8px, 30vw, 520px);
   --x: calc(var(--active) * 400%);
   --y: calc(var(--active) * 100%);
   --rot: calc(var(--active) * 120deg);
@@ -100,8 +100,8 @@ body {
   width: var(--width);
   height: var(--height);
   margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
-  border-radius: 15px;
-  top: 50%;
+  border-radius: 20px;
+  top: clamp(45%, 50vw, 50%);
   left: 50%;
   -webkit-user-select: none;
   -moz-user-select: none;
