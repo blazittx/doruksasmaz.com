@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  font-family: 'GrandHaven';
+  font-family: "GrandHaven";
   height: 100vh;
   background: linear-gradient(135deg, #222222, 10%, #161616);
   cursor: none !important;
@@ -28,14 +28,11 @@ body {
 }
 
 @font-face {
-  font-family: 'GrandHaven';
+  font-family: "GrandHaven";
   src: url(fonts/GrandHaven_ttf.ttf) format("truetype");
 }
 
-
-
-
-.header>.name,
+.header > .name,
 .title,
 .num {
   -webkit-font-smoothing: antialiased;
@@ -49,32 +46,22 @@ body {
   font-size: 18px;
   margin: auto;
   padding: 20px 20px;
-  font-family: 'Bungee';
+  font-family: "Bungee";
 
   color: #fff;
 
-  text-shadow: 0px -3px 0 #212121,
-    0px -3px 0 #212121,
-    0px 3px 0 #212121,
-    0px 3px 0 #212121,
-    -3px 0px 0 #212121,
-    3px 0px 0 #212121,
-    -3px 0px 0 #212121,
-    3px 0px 0 #212121,
-    -3px -3px 0 #212121,
-    3px -3px 0 #212121,
-    -3px 3px 0 #212121,
-    3px 3px 0 #212121,
-    -3px 6px 0 #212121,
-    0px 6px 0 #212121,
+  text-shadow: 0px -3px 0 #212121, 0px -3px 0 #212121, 0px 3px 0 #212121,
+    0px 3px 0 #212121, -3px 0px 0 #212121, 3px 0px 0 #212121, -3px 0px 0 #212121,
+    3px 0px 0 #212121, -3px -3px 0 #212121, 3px -3px 0 #212121,
+    -3px 3px 0 #212121, 3px 3px 0 #212121, -3px 6px 0 #212121, 0px 6px 0 #212121,
     3px 6px 0 #212121 !important;
 }
 
 .name {
   right: 130px !important;
-  font-size: clamp(20px, 10vw, 120px);
+  font-size: clamp(80px, 8vw, 140px);
   text-align: right;
-  color: #FFCD84;
+  color: #ffcd84;
   position: absolute;
   right: 0;
   padding-top: 80px !important;
@@ -86,7 +73,7 @@ body {
   color: #4f4f4f;
   position: relative;
   text-align: right;
-  font-family: 'Consolas';
+  font-family: "Consolas";
   /*padding-top: 10px;*/
   text-shadow: none !important;
 }
@@ -101,8 +88,8 @@ body {
 
 .carousel-item {
   --items: 7;
-  --width: clamp(150px, 30vw, 340px);
-  --height: clamp(200px, 40vw, 480px);
+  --width: clamp(260px, 35vw, 340px);
+  --height: clamp(370px, 50vw, 480px);
   --x: calc(var(--active) * 400%);
   --y: calc(var(--active) * 100%);
   --rot: calc(var(--active) * 120deg);
@@ -126,7 +113,14 @@ body {
   pointer-events: all;
   transform: translate(var(--x), var(--y)) rotate(var(--rot));
   transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1);
-  box-shadow: 0px -6px 0 #FFCD84, 0px -6px 0 #FFCD84, 0px 6px 0 #FFCD84, 0px 6px 0 #FFCD84, -6px 0px 0 #FFCD84, 6px 0px 0 #FFCD84, -6px 0px 0 #FFCD84, 6px 0px 0 #FFCD84, -6px -6px 0 #FFCD84, 6px -6px 0 #FFCD84, -6px 6px 0 #FFCD84, 6px 6px 0 #FFCD84, -6px 18px 0 #FFCD84, 0px 18px 0 #FFCD84, 6px 18px 0 #FFCD84, 0 19px 1px rgb(0 0 0 / 10%), 0 0 6px rgb(0 0 0 / 10%), 0 6px 3px rgb(0 0 0 / 30%), 0 12px 6px rgb(0 0 0 / 20%), 0 18px 18px rgb(0 0 0 / 25%), 0 24px 24px rgb(0 0 0 / 20%), 0 36px 36px rgb(0 0 0 / 15%);
+  box-shadow: 0px -6px 0 #ffcd84, 0px -6px 0 #ffcd84, 0px 6px 0 #ffcd84,
+    0px 6px 0 #ffcd84, -6px 0px 0 #ffcd84, 6px 0px 0 #ffcd84, -6px 0px 0 #ffcd84,
+    6px 0px 0 #ffcd84, -6px -6px 0 #ffcd84, 6px -6px 0 #ffcd84,
+    -6px 6px 0 #ffcd84, 6px 6px 0 #ffcd84, -6px 18px 0 #ffcd84,
+    0px 18px 0 #ffcd84, 6px 18px 0 #ffcd84, 0 19px 1px rgb(0 0 0 / 10%),
+    0 0 6px rgb(0 0 0 / 10%), 0 6px 3px rgb(0 0 0 / 30%),
+    0 12px 6px rgb(0 0 0 / 20%), 0 18px 18px rgb(0 0 0 / 25%),
+    0 24px 24px rgb(0 0 0 / 20%), 0 36px 36px rgb(0 0 0 / 15%);
   opacity: var(--opacity);
 }
 
@@ -136,7 +130,7 @@ body {
   color: #222222;
   bottom: 30px;
   left: 130px;
-  background: #FFCD84;
+  background: #ffcd84;
   padding: 10px 20px 10px 20px;
   max-height: 20vw;
   max-width: 40vw !important;
@@ -146,7 +140,7 @@ body {
   box-sizing: border-box;
   opacity: 0;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-  font-family: 'Bungee';
+  font-family: "Bungee";
 }
 
 .carousel-item .carousel-box {
@@ -157,7 +151,7 @@ body {
   width: 100%;
   height: 100%;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-  font-family: 'GrandHaven';
+  font-family: "GrandHaven";
 }
 
 .carousel-item .carousel-box:before {
@@ -168,7 +162,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.5)
+  );
 }
 
 .carousel-item .title {
@@ -178,9 +178,9 @@ body {
   bottom: 20px;
   left: 20px;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-  font-size: clamp(20px, 3vw, 40px);
+  font-size: clamp(30px, 4vw, 40px);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Bungee';
+  font-family: "Bungee";
 }
 
 .carousel-item .num {
@@ -190,7 +190,7 @@ body {
   top: 10px;
   left: 20px;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-  font-size: clamp(40px, 5vw, 80px);
+  font-size: clamp(60px, 8vw, 80px);
 }
 
 .carousel-item img,
@@ -220,7 +220,7 @@ video {
   left: 90px;
   width: 10px;
   height: 100%;
-  border: 2px solid #FFCD84;
+  border: 2px solid #ffcd84;
   border-top: none;
   border-bottom: none;
   opacity: 0.15;
@@ -230,10 +230,10 @@ video {
   position: absolute;
   bottom: 0;
   left: 30px;
-  color: #FFCD84;
+  color: #ffcd84;
   transform-origin: 0% 10%;
   transform: rotate(-90deg);
-  font-family: 'GrandHaven';
+  font-family: "GrandHaven";
   font-size: 9px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -252,7 +252,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'GrandHaven';
+  font-family: "GrandHaven";
   pointer-events: all;
   color: black;
   text-decoration: none;
@@ -279,14 +279,6 @@ video {
   height: 70px;
 }
 
-
-
-
-
-
-
-
-
 .custom-cursor {
   position: fixed;
   opacity: 0;
@@ -299,7 +291,7 @@ video {
   margin-top: -40px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: #FFCD84;
+  background-color: #ffcd84;
   transition-property: transform, scale, opacity;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
@@ -315,14 +307,6 @@ video {
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
 .mobile-image {
   display: none;
   /* Hide the image by default */
@@ -333,40 +317,6 @@ video {
   /* Show the video by default */
 }
 
-@media screen and (max-width: 2000px) {
-  .carousel-item {
-    --items: 7;
-    --width: clamp(150px, 30vw, 320px);
-    --height: clamp(200px, 40vw, 450px);
-    --x: calc(var(--active) * 400%);
-    --y: calc(var(--active) * 100%);
-    --rot: calc(var(--active) * 120deg);
-    --opacity: calc(var(--zIndex) / var(--items) * 3.2 - 2);
-    overflow: hidden;
-    position: absolute;
-    z-index: var(--zIndex);
-    width: var(--width);
-    height: var(--height);
-    margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
-    border-radius: 20px;
-    top: 50%;
-    left: 50%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    transform-origin: 0% 100%;
-    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.2);
-    background: #ffffff00;
-    pointer-events: all;
-    transform: translate(var(--x), var(--y)) rotate(var(--rot));
-    transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1);
-    box-shadow: 0px -6px 0 #FFCD84, 0px -6px 0 #FFCD84, 0px 6px 0 #FFCD84, 0px 6px 0 #FFCD84, -6px 0px 0 #FFCD84, 6px 0px 0 #FFCD84, -6px 0px 0 #FFCD84, 6px 0px 0 #FFCD84, -6px -6px 0 #FFCD84, 6px -6px 0 #FFCD84, -6px 6px 0 #FFCD84, 6px 6px 0 #FFCD84, -6px 18px 0 #FFCD84, 0px 18px 0 #FFCD84, 6px 18px 0 #FFCD84, 0 19px 1px rgb(0 0 0 / 10%), 0 0 6px rgb(0 0 0 / 10%), 0 6px 3px rgb(0 0 0 / 30%), 0 12px 6px rgb(0 0 0 / 20%), 0 18px 18px rgb(0 0 0 / 25%), 0 24px 24px rgb(0 0 0 / 20%), 0 36px 36px rgb(0 0 0 / 15%);
-    opacity: var(--opacity);
-  }
-
-}
-
 @media screen and (max-width: 1200px) {
   .description-box {
     display: none !important;
@@ -375,7 +325,7 @@ video {
   .name {
     left: 30px;
     text-align: left;
-    font-size: clamp(20px, 10vw, 130px);
+    font-size: clamp(40px, 8vw, 130px);
     position: absolute;
     margin-left: auto;
     padding-top: 28px !important;
@@ -383,7 +333,7 @@ video {
   }
 
   .description {
-    font-size: 18px;
+    font-size: clamp(8px, 2vw, 18px);
     position: relative;
     text-align: left;
     padding-top: 8px;
@@ -392,7 +342,6 @@ video {
 }
 
 @media screen and (max-width: 800px) {
-
   .mobile-image {
     display: block;
     /* Show the image */
@@ -407,83 +356,13 @@ video {
     display: none !important;
   }
 
-  .name {
-    left: 30px;
-    text-align: left;
-    font-size: 40px;
-    position: absolute;
-    margin-left: auto;
-    padding-top: 28px !important;
-    text-shadow: 1px 1px 10px#161616;
-    z-index: 4;
-  }
-
-  .description {
-    font-size: 12px;
-    position: relative;
-    text-align: left;
-    padding-top: 8px;
-    text-shadow: 1px 1px 10px#161616;
-  }
-
-  .carousel-item .num {
-    position: absolute;
-    z-index: 1;
-    color: #fff;
-    top: 10px;
-    left: 20px;
-    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-    font-size: clamp(20px, 10vw, 40px);
-  }
-
-  .header>.name,
+  .header > .name,
   .title,
   .num {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .carousel-item {
-    --items: 7;
-    --width: clamp(260px, 30vw, 350px);
-    --height: clamp(360px, 40vw, 480px);
-    --x: calc(var(--active) * 400%);
-    --y: calc(var(--active) * 100%);
-    --rot: calc(var(--active) * 120deg);
-    --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
-    overflow: hidden;
-    position: absolute;
-    z-index: var(--zIndex);
-    width: var(--width);
-    height: var(--height);
-    margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
-    border-radius: 10px;
-    top: 45%;
-    left: 50%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    transform-origin: 0% 100%;
-    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.2);
-    background: #ffffff00;
-    pointer-events: all;
-    transform: translate(var(--x), var(--y)) rotate(var(--rot));
-    transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1);
-    box-shadow: 0px -6px 0 #FFCD84, 0px -6px 0 #FFCD84, 0px 6px 0 #FFCD84, 0px 6px 0 #FFCD84, -6px 0px 0 #FFCD84, 6px 0px 0 #FFCD84, -6px 0px 0 #FFCD84, 6px 0px 0 #FFCD84, -6px -6px 0 #FFCD84, 6px -6px 0 #FFCD84, -6px 6px 0 #FFCD84, 6px 6px 0 #FFCD84, -6px 18px 0 #FFCD84, 0px 18px 0 #FFCD84, 6px 18px 0 #FFCD84, 0 19px 1px rgb(0 0 0 / 10%), 0 0 6px rgb(0 0 0 / 10%), 0 6px 3px rgb(0 0 0 / 30%), 0 12px 6px rgb(0 0 0 / 20%), 0 18px 18px rgb(0 0 0 / 25%), 0 24px 24px rgb(0 0 0 / 20%), 0 36px 36px rgb(0 0 0 / 15%);
-    opacity: var(--opacity);
-  }
-
-  .carousel-item .title {
-    z-index: 1;
-    font-size: 24px;
-    left: 0;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  }
 
   .description-box {
     display: none !important;
@@ -503,10 +382,10 @@ video {
     position: absolute;
     bottom: 0;
     left: 12px;
-    color: #FFCD84;
+    color: #ffcd84;
     transform-origin: 0% 10%;
     transform: rotate(-90deg);
-    font-family: 'Bungee';
+    font-family: "Bungee";
     font-size: 8px;
     line-height: 1.4;
     text-transform: uppercase;
@@ -521,13 +400,12 @@ video {
     left: 50px;
     width: 10px;
     height: 100%;
-    border: 1px solid #FFCD84;
+    border: 1px solid #ffcd84;
     border-top: none;
     border-bottom: none;
     opacity: 0.15;
   }
 }
-
 
 .social-media-icons {
   position: fixed;
