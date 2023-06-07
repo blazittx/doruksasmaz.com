@@ -66,6 +66,8 @@ body {
   right: 0;
   padding-top: clamp(20px, 4vw, 80px) !important;
   z-index: 4;
+
+  mix-blend-mode: difference;
 }
 
 .description {
@@ -325,7 +327,7 @@ video {
   .name {
     left: 30px;
     text-align: left;
-    font-size: clamp(40px, 8vw, 130px);
+    font-size: clamp(35px, 8vw, 130px);
     position: absolute;
     margin-left: auto;
     padding-top: 28px !important;

@@ -105,9 +105,93 @@ p {
   font-family: 'Montserrat';
   font-size: 16px;
   margin-bottom: 20px;
+  line-height: 150%;
 }
 
 
+
+
+
+
+
+
+.calendar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 500px;
+    background-color: #222222;
+    border: 3px solid #FFCD84;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calendar .month {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calendar .weekdays, .calendar .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .weekdays div {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.calendar .days .day {
+    padding: 5px;
+    margin: 1px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    position: relative; /* Required for tooltip positioning */
+}
+
+.calendar .days .day:hover {
+    background-color: #FFCD84;
+    transform: scale(1.4);
+}
+
+.calendar .days .day.event-day {
+    border: 2px solid #FFCD84;
+}
+
+.calendar .days .day .event {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 200px;
+    text-align: left;
+}
+
+.calendar .days .day:hover .event {
+    display: block;
+}
+
+.event-detail {
+  flex-grow: 1;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
 
 
 
